@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GIẢI CỜ CARO 2026 — Bảng kết quả trực tiếp</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="goban-bg"></div>
+
+<div class="wrap">
+
+  <header>
+    <div class="brand">
+      <div class="stone-mark"></div>
+      <div>
+        <h1>GIẢI CỜ CARO 2026</h1>
+        <div class="sub">Trường ĐH KHTN, ĐHQG-HCM</div>
+      </div>
+    </div>
+    <div class="status-pill"><span class="dot"></span> Đang cập nhật trực tiếp</div>
+  </header>
+
+  <nav class="tabs">
+    <button class="tab-btn active" data-tab="group"><span class="num">01</span>Bảng xếp hạng vòng bảng</button>
+    <button class="tab-btn" data-tab="bracket"><span class="num">02</span>Sơ đồ nhánh đấu</button>
+  </nav>
+
+  <!-- ============ PANEL: GROUP STAGE ============ -->
+  <section class="panel active" id="panel-group">
+    <div class="group-toolbar">
+      <div class="hint">16 bảng đấu · 4 VĐV/bảng · Lấy 2 người dẫn đầu mỗi bảng</div>
+      <div class="legend">
+        <span><i class="sw" style="background:var(--win)"></i> Nhất bảng</span>
+        <span><i class="sw" style="background:#6f9a72"></i> Nhì bảng</span>
+        <span><i class="sw" style="background:var(--paper-2);border:1px solid var(--line)"></i> Dừng bước</span>
+      </div>
+    </div>
+    <div class="group-grid" id="groupGrid"></div>
+  </section>
+
+  <!-- ============ PANEL: BRACKET ============ -->
+  <section class="panel" id="panel-bracket">
+    <div class="bracket-scroll">
+      <div class="bracket" id="bracketGrid"></div>
+    </div>
+
+    <div class="champion-banner">
+      <div class="trophy">🏆</div>
+      <div>
+        <h3>Nhà vô địch</h3>
+        <p class="cname" id="championName"><span class="tbd">Đang chờ kết quả Chung kết…</span></p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <span>Dữ liệu cập nhật từ bảng tính BTC</span>
+    <span id="clock"></span>
+  </footer>
+
+</div>
+
+<!-- Data trước, render logic sau -->
+<script src="data.js"></script>
+<script src="main.js"></script>
+
+</body>
+</html>
