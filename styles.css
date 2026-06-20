@@ -345,7 +345,8 @@ header {
 }
 
 .champion-banner {
-  margin-top: 28px;
+  margin-top: 5px;
+  margin-bottom: 40px;
   border: 2px solid var(--gold);
   background: linear-gradient(135deg, #fbf3da, var(--paper-2));
   border-radius: 6px;
@@ -400,4 +401,32 @@ footer {
   height: 90px;
   object-fit: contain;
   flex-shrink: 0;
+}
+
+.round8 {
+  padding-top: 55px;
+}
+
+.quarter {
+  padding-top: 170px;
+}
+
+.semi {
+  padding-top: 345px;
+}
+
+.final {
+  padding-top: 710px;
+}
+
+.round8 .match {
+  margin-bottom: 95px;
+}
+
+.quarter .match {
+  margin-bottom: 277px;
+}
+
+.semi .match {
+  margin-bottom: 650px;
 }
